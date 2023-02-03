@@ -16,6 +16,7 @@ const ProjectList = () => {
             btnSecondary={true}
             to={item.to}
             href={item.href}
+            desc={item.desc}
           ></Card>
         ))}
       </CardList>
