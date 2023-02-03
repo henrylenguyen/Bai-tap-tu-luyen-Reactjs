@@ -87,8 +87,8 @@ export default function Nav() {
                           to={item.to}
                           className={({ isActive }) =>
                             isActive
-                              ? "font-semibold  text-[#fea255] hover:text-[#e07211] -mx-3 block py-5 leading-7"
-                              : "font-semibold  text-white hover:text-[#fea255]  -mx-3 block py-5  leading-7"
+                              ? "font-semibold  text-linear -mx-3 block py-5 leading-7"
+                              : "font-semibold  text-white hover:text-[#7127ba]  -mx-3 block py-5  leading-7"
                           }
                         >
                           {item.title}

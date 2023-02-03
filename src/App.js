@@ -9,10 +9,11 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Nav />}>
-          <Route path="/" element={<ProjectList></ProjectList>  }></Route>
+          <Route path="/" element={<ProjectList></ProjectList>}></Route>
           <Route
             path="/bai-tap-nho/:slug"
             element={<LiveView></LiveView>}
+            
           ></Route>
           <Route path="/capstone" element={<Capstones></Capstones>}></Route>
         </Route>
