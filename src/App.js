@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import LiveView from "./components/card/LiveView";
+import Capstones from "./components/layout/Capstones";
+import Nav from "./components/layout/Header";
+import ProjectList from "./components/layout/ProjectList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Nav />}>
+          <Route path="/" element={<ProjectList></ProjectList>  }></Route>
+          <Route
+            path="/bai-tap-nho/:slug"
+            element={<LiveView></LiveView>}
+          ></Route>
+          <Route path="/capstone" element={<Capstones></Capstones>}></Route>
+        </Route>
+        <Route path="*" element={<>404</>}></Route>
+      </Routes>
     </div>
   );
 }
