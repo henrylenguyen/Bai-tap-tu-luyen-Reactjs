@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import MovieSearchApp from "../../layouts/Movie/MovieSearchApp";
+import PageNotFound from "../layout/PageNotFound";
 
 
 const LiveView = () => {
@@ -11,7 +12,7 @@ const LiveView = () => {
       {slug === "movie-search-app" ? (
        <MovieSearchApp></MovieSearchApp>
       ) : (
-        ""
+        <PageNotFound></PageNotFound>
       )}
     </div>
   );
