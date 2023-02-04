@@ -1,8 +1,9 @@
-import { SET_MOVIE, SET_QUERY } from "../constants/movieConstants";
+import { SET_LOADING, SET_MOVIE, SET_QUERY } from "../constants/movieConstants";
 
 export const initialState = {
   movies: [],
-  query: ""
+  query: "",
+  loading: true
 }
 
  export const setMovies = (payload)=>{
@@ -14,6 +15,12 @@ export const initialState = {
  export const setQuery = (payload)=>{
   return {
     type: SET_QUERY,
+    payload,
+  };
+}
+ export const setLoading = (payload)=>{
+  return {
+    type: SET_LOADING,
     payload,
   };
 }
