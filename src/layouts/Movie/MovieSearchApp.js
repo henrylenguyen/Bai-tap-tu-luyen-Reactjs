@@ -48,6 +48,9 @@ const MovieSearchApp = () => {
           <MovieLoading></MovieLoading>
           <MovieLoading></MovieLoading>
           <MovieLoading></MovieLoading>
+          <MovieLoading></MovieLoading>
+          <MovieLoading></MovieLoading>
+          <MovieLoading></MovieLoading>
         </div>
       )}
       <div className="grid  gap-10 mt-10 sm:grid-cols-2 lg:grid-cols-3">

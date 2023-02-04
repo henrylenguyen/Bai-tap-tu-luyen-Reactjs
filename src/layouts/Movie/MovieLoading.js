@@ -11,13 +11,13 @@ const MovieLoading = () => {
         <h3 className="leading-[24px] font-semibold text-[1.6rem]">
           <LoadingSkeleton height="20px"></LoadingSkeleton>
         </h3>
-        <p className="font-normal text-[1.4rem] !leading-[21px] text-[rgba(153,_153,_153,_1);] my-[1.6rem]">
+        <div className="font-normal text-[1.4rem] !leading-[21px] text-[rgba(153,_153,_153,_1);] my-[1.6rem]">
           <LoadingSkeleton height="10px"></LoadingSkeleton>
-          <div className="h-3"></div>
+          <p className="h-3"></p>
           <LoadingSkeleton height="10px"></LoadingSkeleton>
-          <div className="h-3"></div>
+          <p className="h-3"></p>
           <LoadingSkeleton height="10px"></LoadingSkeleton>
-        </p>
+        </div>
         <div className="flex gap-5 mt-auto">
           <LoadingSkeleton width="15px" height="15px"></LoadingSkeleton>
           <span className="font-semibold text-[rgba(51,_51,_51,_1);] text-[1.4rem] ">
