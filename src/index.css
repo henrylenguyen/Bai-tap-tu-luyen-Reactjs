@@ -44,6 +44,26 @@
   button{
     cursor: pointer;
   }
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 }
 
 .text-linear{
@@ -61,4 +81,15 @@
   to{
     background-position-x: -200%;
   }
+}
+.btn{
+  color: white;
+  padding: 1.5rem;
+  font-weight: 600;
+  border-radius: 1.6rem;
+  width: 100%;
+}
+.btn.btn-primary{
+     background: linear-gradient(0deg, #2c1250, #2c1250),
+  linear-gradient(0deg, #693b93, #693b93);
 }
