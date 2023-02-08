@@ -93,3 +93,23 @@
      background: linear-gradient(0deg, #2c1250, #2c1250),
   linear-gradient(0deg, #693b93, #693b93);
 }
+.custom-radio{
+  width: 10px;
+  height: 10px;
+
+}
+.custom-radio >div{
+  box-shadow: 0 0 0 5px white;
+}
+.custom-radio input:checked + div{
+ @apply bg-blue-500;
+ box-shadow:  0 0 0 2.5px white, 0 0 0 5px rgb(59 130 246 / var(--tw-bg-opacity));
+}
+.custom-checkbox input:checked + div .custom-checkbox-square{
+ background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+ 
+}
+.custom-checkbox-square{
+  width: 20px;
+  height: 20px;
+}

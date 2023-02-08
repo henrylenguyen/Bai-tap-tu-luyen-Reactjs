@@ -1,9 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import SignUpFormV2 from "../../layouts/Formik/SignUpFormV2";
 
 import MovieSearchApp from "../../layouts/Movie/MovieSearchApp";
-import SignUpFormHook from "../../layouts/reactHookForm/SignUpFormHook";
+import RegisterHook from "../../layouts/ReactHookForm.js/RegisterHook";
 import PageNotFound from "../layout/PageNotFound";
 
 
@@ -15,9 +14,9 @@ const LiveView = () => {
       {slug === "movie-search-app" ? (
         <MovieSearchApp></MovieSearchApp>
       ) : slug === "sign-up-form-formik" ? (
-        <SignUpFormV2></SignUpFormV2>
-      ) : slug === "sign-up-form-react-hook-form" ? (
-        <SignUpFormHook></SignUpFormHook>
+        <h2>Đang cập nhật</h2>
+      ) : slug === "register-form-react-hook-form" ? (
+        <RegisterHook></RegisterHook>
       ) : (
         <PageNotFound></PageNotFound>
       )}

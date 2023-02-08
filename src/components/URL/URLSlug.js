@@ -17,8 +17,8 @@ export const URLSlug = [
   },
   {
     id: 3,
-    title: "Sign Up Form with React-hook-form",
-    to: "/bai-tap-nho/sign-up-form-react-hook-form",
+    title: "Registe React-hook-form",
+    to: "/bai-tap-nho/register-form-react-hook-form",
     img: "https://res.cloudinary.com/monday-blogs/fl_lossy,f_auto,q_auto/wp-blog/2022/02/Sign-up-sheet-blog-cover.png",
     href: "#",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatem vel eveniet fugiat, possimus repudiandae. Deserunt dolore porro dolor incidunt? Quasi qui nam, voluptatem sapiente inventore harum soluta aperiam sunt!",
